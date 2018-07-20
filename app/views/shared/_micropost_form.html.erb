@@ -4,9 +4,7 @@
     <%= f.text_area :content, placeholder: "What do you want to do until the last day of your life?" %>
   </div>
   <div class="field">
-    <!-- 日付で入力できるようになるけどとりあえず後回し
-    <%= f.date_field :until, placeholder: "Until?" %> -->
-    <%= f.text_field :until, placeholder: "Until?" %>
+    <%= f.date_field :until, placeholder: "Until?" %> 
   </div>
   
   <%= f.submit "Post", class: "btn btn-primary" %>

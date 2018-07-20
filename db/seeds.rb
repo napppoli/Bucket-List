@@ -25,7 +25,6 @@ i = 0
 10.times do
   content = Faker::Lorem.sentence(5)
   till = Date.new(2018, 12, 24) + i
-  till = till.strftime("%Y/%m/%d")
   users.each { |user| user.microposts.create!(content: content, until: till) }
   i = i + 1
 end
